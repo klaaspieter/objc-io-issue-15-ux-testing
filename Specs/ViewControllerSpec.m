@@ -33,7 +33,24 @@ describe(@"ViewController", ^{
 
         expect(_viewController.presentedViewController).to.beKindOf([PresentedViewController class]);
     });
-});
 
+    describe(@"table views", ^{
+        // Unfortunately there is no way to programatically select the table view cell in such
+        // a way that the segue will be triggered. There are two options:
+        // 1. Manually trigger the name segued, assuming that the table view cell is configured correctly
+        // 2. Implement the table view selection delegate to perform the segue. In other words don't use storyboards for this.
+
+        it(@"pushes a view controller when the table view cell is tapped 1", ^{
+            [_viewController performSegueWithIdentifier:@"TableViewPushSegue" sender:nil];
+            expect(_viewController.navigationController.topViewController).to.beKindOf([PresentedViewController class]);
+        });
+
+        it(@"pushes a view controller when the tableview cell is tapped 2", ^{
+            [_viewController.tableView.delegate tableView:_viewController.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            expect(_viewController.navigationController.topViewController).to.beKindOf([PresentedViewController class]);
+        });
+    });
+
+});
 
 SpecEnd
