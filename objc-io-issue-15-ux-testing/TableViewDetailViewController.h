@@ -10,4 +10,7 @@
 
 @interface TableViewDetailViewController : UIViewController
 
+@property (nonatomic, readwrite, copy) NSString *presentationKind;
+@property (nonatomic, readwrite, assign) IBOutlet UILabel *presentationKindLabel;
+
 @end

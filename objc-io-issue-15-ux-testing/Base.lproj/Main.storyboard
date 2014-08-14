@@ -246,7 +246,7 @@
                         <viewControllerLayoutGuide type="top" id="GyL-gT-xvh"/>
                         <viewControllerLayoutGuide type="bottom" id="ea4-gd-eq8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="TableViewDetailViewController" id="LDF-3Z-zmQ" customClass="TableViewDetailViewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="TableViewDetailViewController" id="LDF-3Z-zmQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -274,7 +274,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="QRt-ie-B1S"/>
                     <connections>
-                        <outlet property="presentationKindLabel" destination="mD4-CI-f1U" id="pNA-co-xoR"/>
+                        <outlet property="presentationKindLabel" destination="mD4-CI-f1U" id="WAM-z2-fAY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWG-RK-nNt" userLabel="First Responder" sceneMemberID="firstResponder"/>

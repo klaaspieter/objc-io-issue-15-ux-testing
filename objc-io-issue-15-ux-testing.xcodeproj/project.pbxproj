@@ -12,6 +12,7 @@
 		A12F1035199D207600FC8A5F /* TableViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1034199D207600FC8A5F /* TableViewDetailViewController.m */; };
 		A12F1038199D212A00FC8A5F /* TableViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1037199D212A00FC8A5F /* TableViewTableViewController.m */; };
 		A12F103A199D214100FC8A5F /* TableViewTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1039199D214100FC8A5F /* TableViewTableViewControllerSpec.m */; };
+		A12F103C199D244F00FC8A5F /* TableViewDetailViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F103B199D244F00FC8A5F /* TableViewDetailViewControllerSpec.m */; };
 		A160D6D619759B410006355E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D519759B410006355E /* main.m */; };
 		A160D6D919759B410006355E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D819759B410006355E /* AppDelegate.m */; };
 		A160D6DF19759B410006355E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A160D6DD19759B410006355E /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		A12F1036199D212A00FC8A5F /* TableViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTableViewController.h; sourceTree = "<group>"; };
 		A12F1037199D212A00FC8A5F /* TableViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTableViewController.m; sourceTree = "<group>"; };
 		A12F1039199D214100FC8A5F /* TableViewTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTableViewControllerSpec.m; sourceTree = "<group>"; };
+		A12F103B199D244F00FC8A5F /* TableViewDetailViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDetailViewControllerSpec.m; sourceTree = "<group>"; };
 		A160D6D019759B410006355E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A160D6D419759B410006355E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A160D6D519759B410006355E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				A1EEC2311975D1540094AE86 /* Supporting Files */,
 				A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */,
 				A12F1039199D214100FC8A5F /* TableViewTableViewControllerSpec.m */,
+				A12F103B199D244F00FC8A5F /* TableViewDetailViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			files = (
 				A12F103A199D214100FC8A5F /* TableViewTableViewControllerSpec.m in Sources */,
 				A12F1032199D1BEF00FC8A5F /* ControlsViewControllerSpec.m in Sources */,
+				A12F103C199D244F00FC8A5F /* TableViewDetailViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

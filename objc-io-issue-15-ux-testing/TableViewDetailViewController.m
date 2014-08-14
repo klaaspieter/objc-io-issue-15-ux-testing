@@ -14,4 +14,14 @@
 
 @implementation TableViewDetailViewController
 
+- (void)viewWillAppear:(BOOL)animated;
+{
+    [super viewWillAppear:animated];
+
+    NSAssert(self.presentationKind, @"%@ cannot be presented without a presentation kind",
+             NSStringFromClass(self.class));
+
+    self.presentationKindLabel.text = self.presentationKind;
+}
+
 @end
