@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12F1030199D1BC000FC8A5F /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F102F199D1BC000FC8A5F /* ControlsViewController.m */; };
+		A12F1032199D1BEF00FC8A5F /* ControlsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */; };
 		A160D6D619759B410006355E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D519759B410006355E /* main.m */; };
 		A160D6D919759B410006355E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D819759B410006355E /* AppDelegate.m */; };
 		A160D6DF19759B410006355E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A160D6DD19759B410006355E /* Main.storyboard */; };
@@ -51,6 +53,9 @@
 		5D9A1EFFF7684D1480EF7ED4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7005F0757E7E48BAB74847BF /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D773D9764F446C1A620416F /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = "<group>"; };
+		A12F102E199D1BC000FC8A5F /* ControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsViewController.h; sourceTree = "<group>"; };
+		A12F102F199D1BC000FC8A5F /* ControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsViewController.m; sourceTree = "<group>"; };
+		A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsViewControllerSpec.m; sourceTree = "<group>"; };
 		A160D6D019759B410006355E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A160D6D419759B410006355E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A160D6D519759B410006355E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,11 +123,13 @@
 		A160D6D219759B410006355E /* objc-io-issue-15-ux-testing */ = {
 			isa = PBXGroup;
 			children = (
+				A160D6D319759B410006355E /* Supporting Files */,
+				A160D6E019759B410006355E /* Images.xcassets */,
 				A160D6D719759B410006355E /* AppDelegate.h */,
 				A160D6D819759B410006355E /* AppDelegate.m */,
 				A160D6DD19759B410006355E /* Main.storyboard */,
-				A160D6E019759B410006355E /* Images.xcassets */,
-				A160D6D319759B410006355E /* Supporting Files */,
+				A12F102E199D1BC000FC8A5F /* ControlsViewController.h */,
+				A12F102F199D1BC000FC8A5F /* ControlsViewController.m */,
 			);
 			path = "objc-io-issue-15-ux-testing";
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				A1EEC2311975D1540094AE86 /* Supporting Files */,
+				A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -324,6 +332,7 @@
 			files = (
 				A160D6D919759B410006355E /* AppDelegate.m in Sources */,
 				A160D6D619759B410006355E /* main.m in Sources */,
+				A12F1030199D1BC000FC8A5F /* ControlsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12F1032199D1BEF00FC8A5F /* ControlsViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
