@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A112E9B31975D4B500075478 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A112E9B21975D4B500075478 /* PresentedViewController.m */; };
 		A160D6D619759B410006355E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D519759B410006355E /* main.m */; };
 		A160D6D919759B410006355E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D819759B410006355E /* AppDelegate.m */; };
-		A160D6DC19759B410006355E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6DB19759B410006355E /* ViewController.m */; };
 		A160D6DF19759B410006355E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A160D6DD19759B410006355E /* Main.storyboard */; };
 		A160D6E119759B410006355E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A160D6E019759B410006355E /* Images.xcassets */; };
-		A1EEC24A1975D24C0094AE86 /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EEC2411975D1B90094AE86 /* ViewControllerSpec.m */; };
 		D9033E08A23847B78CB3AEDC /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7005F0757E7E48BAB74847BF /* libPods-Specs.a */; };
 		F959F770B22342CD8805D1B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9A1EFFF7684D1480EF7ED4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -54,20 +51,15 @@
 		5D9A1EFFF7684D1480EF7ED4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7005F0757E7E48BAB74847BF /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D773D9764F446C1A620416F /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = "<group>"; };
-		A112E9B11975D4B500075478 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
-		A112E9B21975D4B500075478 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
 		A160D6D019759B410006355E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A160D6D419759B410006355E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A160D6D519759B410006355E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A160D6D719759B410006355E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A160D6D819759B410006355E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A160D6DA19759B410006355E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A160D6DB19759B410006355E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A160D6DE19759B410006355E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A160D6E019759B410006355E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A1EEC22F1975D1540094AE86 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EEC2321975D1540094AE86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1EEC2411975D1B90094AE86 /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
 		A1EEC2431975D1C80094AE86 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		A1EEC2481975D1FE0094AE86 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -128,10 +120,6 @@
 			children = (
 				A160D6D719759B410006355E /* AppDelegate.h */,
 				A160D6D819759B410006355E /* AppDelegate.m */,
-				A160D6DA19759B410006355E /* ViewController.h */,
-				A160D6DB19759B410006355E /* ViewController.m */,
-				A112E9B11975D4B500075478 /* PresentedViewController.h */,
-				A112E9B21975D4B500075478 /* PresentedViewController.m */,
 				A160D6DD19759B410006355E /* Main.storyboard */,
 				A160D6E019759B410006355E /* Images.xcassets */,
 				A160D6D319759B410006355E /* Supporting Files */,
@@ -152,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				A1EEC2311975D1540094AE86 /* Supporting Files */,
-				A1EEC2411975D1B90094AE86 /* ViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -335,8 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A160D6DC19759B410006355E /* ViewController.m in Sources */,
-				A112E9B31975D4B500075478 /* PresentedViewController.m in Sources */,
 				A160D6D919759B410006355E /* AppDelegate.m in Sources */,
 				A160D6D619759B410006355E /* main.m in Sources */,
 			);
@@ -346,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EEC24A1975D24C0094AE86 /* ViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
