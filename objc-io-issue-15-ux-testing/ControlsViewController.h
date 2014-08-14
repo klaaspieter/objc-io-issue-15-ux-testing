@@ -13,4 +13,7 @@
 @property (nonatomic, readwrite, weak) IBOutlet UIButton *button;
 @property (nonatomic, readwrite, weak) IBOutlet UILabel *buttonStateLabel;
 
+@property (nonatomic, readwrite, weak) IBOutlet UISegmentedControl *segmentedControl;
+@property (nonatomic, readwrite, weak) IBOutlet UILabel *segmentLabel;
+
 @end

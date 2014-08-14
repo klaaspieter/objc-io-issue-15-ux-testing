@@ -77,21 +77,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIButton" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNT-cV-G14">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIButton" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNT-cV-G14">
                                 <rect key="frame" x="20" y="84" width="46" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UISegmentedControl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSW-Mz-fFA">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UISegmentedControl" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSW-Mz-fFA">
                                 <rect key="frame" x="20" y="154" width="108" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCM-cm-qWs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCM-cm-qWs">
                                 <rect key="frame" x="20" y="106" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button">
@@ -101,27 +101,52 @@
                                     <action selector="updateStateLabel:" destination="5l7-He-zOZ" eventType="touchUpInside" id="jbd-XX-r7i"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-FR-bOI">
-                                <rect key="frame" x="20" y="176" width="280" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-FR-bOI">
+                                <rect key="frame" x="20" y="176" width="123" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeSegment:" destination="5l7-He-zOZ" eventType="valueChanged" id="Lta-J1-Xhr"/>
+                                </connections>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Button State" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVn-Mc-cel">
-                                <rect key="frame" x="206" y="99" width="94" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button State" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVn-Mc-cel">
+                                <rect key="frame" x="206" y="99" width="94" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segment 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8G-e7-F24">
+                                <rect key="frame" x="220" y="167" width="80" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xSW-Mz-fFA" firstAttribute="leading" secondItem="KMP-LI-wXR" secondAttribute="leading" constant="20" id="0Qu-W4-TGW"/>
+                            <constraint firstAttribute="trailing" secondItem="y8G-e7-F24" secondAttribute="trailing" constant="20" id="4PN-bV-ccK"/>
+                            <constraint firstItem="aX4-FR-bOI" firstAttribute="leading" secondItem="KMP-LI-wXR" secondAttribute="leading" constant="20" id="4yG-HO-7AT"/>
+                            <constraint firstItem="xSW-Mz-fFA" firstAttribute="top" secondItem="BCM-cm-qWs" secondAttribute="bottom" constant="18" id="5N6-E2-8Iq"/>
+                            <constraint firstItem="NNT-cV-G14" firstAttribute="leading" secondItem="KMP-LI-wXR" secondAttribute="leading" constant="20" id="J5u-IZ-G5B"/>
+                            <constraint firstItem="NNT-cV-G14" firstAttribute="top" secondItem="TCS-4I-jCh" secondAttribute="bottom" constant="20" id="M7F-gd-dTx"/>
+                            <constraint firstItem="BCM-cm-qWs" firstAttribute="top" secondItem="NNT-cV-G14" secondAttribute="bottom" constant="8" id="U5d-uU-wlT"/>
+                            <constraint firstItem="aX4-FR-bOI" firstAttribute="top" secondItem="xSW-Mz-fFA" secondAttribute="bottom" constant="8" id="W3c-pQ-ufx"/>
+                            <constraint firstAttribute="trailing" secondItem="PVn-Mc-cel" secondAttribute="trailing" constant="20" id="hRt-3f-cfr"/>
+                            <constraint firstItem="PVn-Mc-cel" firstAttribute="top" secondItem="TCS-4I-jCh" secondAttribute="bottom" constant="35" id="szZ-yw-k8b"/>
+                            <constraint firstItem="y8G-e7-F24" firstAttribute="top" secondItem="PVn-Mc-cel" secondAttribute="bottom" constant="48" id="wmI-mw-HZL"/>
+                            <constraint firstItem="BCM-cm-qWs" firstAttribute="leading" secondItem="KMP-LI-wXR" secondAttribute="leading" constant="20" id="ydb-hY-HXi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9I3-84-gTQ"/>
                     <connections>
                         <outlet property="button" destination="BCM-cm-qWs" id="rSF-u2-DEL"/>
                         <outlet property="buttonStateLabel" destination="PVn-Mc-cel" id="3iB-l8-bcN"/>
+                        <outlet property="segmentLabel" destination="y8G-e7-F24" id="XxN-TF-NMz"/>
+                        <outlet property="segmentedControl" destination="aX4-FR-bOI" id="ZZ8-nj-AP3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgf-pz-YL8" userLabel="First Responder" sceneMemberID="firstResponder"/>

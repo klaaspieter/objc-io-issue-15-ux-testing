@@ -10,6 +10,7 @@
 
 @interface ControlsViewController ()
 - (IBAction)updateStateLabel:(id)sender;
+- (IBAction)changeSegment:(id)sender;
 @end
 
 @implementation ControlsViewController
@@ -17,6 +18,11 @@
 - (IBAction)updateStateLabel:(id)sender;
 {
     self.buttonStateLabel.text = @"Pressed";
+}
+
+- (IBAction)changeSegment:(id)sender
+{
+    self.segmentLabel.text = [NSString stringWithFormat:@"Segment %i", self.segmentedControl.selectedSegmentIndex];
 }
 
 @end
