@@ -218,7 +218,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="8QL-Bc-vKk" kind="push" identifier="SpecialSegue" id="yU4-Oc-nmf"/>
+                                            <segue destination="8QL-Bc-vKk" kind="push" identifier="Segue" id="yU4-Oc-nmf"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -231,7 +231,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="urk-1v-hmW"/>
                     <connections>
-                        <segue destination="8QL-Bc-vKk" kind="push" identifier="TableViewDetailViewControllerSegue" id="EIY-mL-l7b"/>
+                        <segue destination="8QL-Bc-vKk" kind="push" identifier="Delegate" id="EIY-mL-l7b"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9oY-3I-erX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,6 +288,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="yU4-Oc-nmf"/>
+        <segue reference="EIY-mL-l7b"/>
     </inferredMetricsTieBreakers>
 </document>

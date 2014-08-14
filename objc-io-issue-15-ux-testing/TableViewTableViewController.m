@@ -13,15 +13,20 @@
 #import "TableViewDetailViewController.h"
 
 @interface TableViewTableViewController ()
-
 @end
 
 @implementation TableViewTableViewController
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+{
+    TableViewDetailViewController *detailViewController = (TableViewDetailViewController *)
+        segue.destinationViewController;
+    detailViewController.presentationKind = segue.identifier;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    NSString *segueIdentifier = [UIStoryboard segueIdentifierForClass:[TableViewDetailViewController class]];
-    [self performSegueWithIdentifier:segueIdentifier sender:nil];
+    [self performSegueWithIdentifier:@"Delegate" sender:nil];
 }
 
 @end
