@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A12F1030199D1BC000FC8A5F /* ControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F102F199D1BC000FC8A5F /* ControlsViewController.m */; };
 		A12F1032199D1BEF00FC8A5F /* ControlsViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */; };
+		A12F1035199D207600FC8A5F /* TableViewDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1034199D207600FC8A5F /* TableViewDetailViewController.m */; };
+		A12F1038199D212A00FC8A5F /* TableViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1037199D212A00FC8A5F /* TableViewTableViewController.m */; };
+		A12F103A199D214100FC8A5F /* TableViewTableViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A12F1039199D214100FC8A5F /* TableViewTableViewControllerSpec.m */; };
 		A160D6D619759B410006355E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D519759B410006355E /* main.m */; };
 		A160D6D919759B410006355E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A160D6D819759B410006355E /* AppDelegate.m */; };
 		A160D6DF19759B410006355E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A160D6DD19759B410006355E /* Main.storyboard */; };
@@ -56,6 +59,11 @@
 		A12F102E199D1BC000FC8A5F /* ControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlsViewController.h; sourceTree = "<group>"; };
 		A12F102F199D1BC000FC8A5F /* ControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsViewController.m; sourceTree = "<group>"; };
 		A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlsViewControllerSpec.m; sourceTree = "<group>"; };
+		A12F1033199D207600FC8A5F /* TableViewDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDetailViewController.h; sourceTree = "<group>"; };
+		A12F1034199D207600FC8A5F /* TableViewDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDetailViewController.m; sourceTree = "<group>"; };
+		A12F1036199D212A00FC8A5F /* TableViewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTableViewController.h; sourceTree = "<group>"; };
+		A12F1037199D212A00FC8A5F /* TableViewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTableViewController.m; sourceTree = "<group>"; };
+		A12F1039199D214100FC8A5F /* TableViewTableViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTableViewControllerSpec.m; sourceTree = "<group>"; };
 		A160D6D019759B410006355E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A160D6D419759B410006355E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A160D6D519759B410006355E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,11 +133,15 @@
 			children = (
 				A160D6D319759B410006355E /* Supporting Files */,
 				A160D6E019759B410006355E /* Images.xcassets */,
+				A160D6DD19759B410006355E /* Main.storyboard */,
 				A160D6D719759B410006355E /* AppDelegate.h */,
 				A160D6D819759B410006355E /* AppDelegate.m */,
-				A160D6DD19759B410006355E /* Main.storyboard */,
 				A12F102E199D1BC000FC8A5F /* ControlsViewController.h */,
 				A12F102F199D1BC000FC8A5F /* ControlsViewController.m */,
+				A12F1036199D212A00FC8A5F /* TableViewTableViewController.h */,
+				A12F1037199D212A00FC8A5F /* TableViewTableViewController.m */,
+				A12F1034199D207600FC8A5F /* TableViewDetailViewController.m */,
+				A12F1033199D207600FC8A5F /* TableViewDetailViewController.h */,
 			);
 			path = "objc-io-issue-15-ux-testing";
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 			children = (
 				A1EEC2311975D1540094AE86 /* Supporting Files */,
 				A12F1031199D1BEF00FC8A5F /* ControlsViewControllerSpec.m */,
+				A12F1039199D214100FC8A5F /* TableViewTableViewControllerSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -333,6 +346,8 @@
 				A160D6D919759B410006355E /* AppDelegate.m in Sources */,
 				A160D6D619759B410006355E /* main.m in Sources */,
 				A12F1030199D1BC000FC8A5F /* ControlsViewController.m in Sources */,
+				A12F1038199D212A00FC8A5F /* TableViewTableViewController.m in Sources */,
+				A12F1035199D207600FC8A5F /* TableViewDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12F103A199D214100FC8A5F /* TableViewTableViewControllerSpec.m in Sources */,
 				A12F1032199D1BEF00FC8A5F /* ControlsViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
